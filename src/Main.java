@@ -2,6 +2,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static void task1(){
@@ -27,5 +28,17 @@ public class Main {
 //        на полностью заглавные буквы.
         String fullName = "Ivanov Ivan Ivanovich";
         System.out.println(fullName.toUpperCase());
+    }
+
+    public static void task3() {
+        System.out.println("Задача 3");
+//        Система, в которой мы работаем, не принимает символ «ё». Напишите программу,
+//        которая заменяет символ «ё» на символ «е».
+//        В качестве исходных данных используйте строку fullName и данные в ней — "Иванов Семён Семёнович".
+//        Выведите результат программы в консоль в формате: «Данные ФИО сотрудника — ...».
+        String fullName = "Иванов Семён Семёнович";
+        fullName = fullName.replace("ё", "е");
+        fullName = fullName.replace("Ё", "Е");
+        System.out.println(fullName);
     }
 }
