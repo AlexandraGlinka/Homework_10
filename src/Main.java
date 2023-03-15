@@ -41,4 +41,5 @@ public class Main {
         fullName = fullName.replace("Ё", "Е");
         System.out.println(fullName);
     }
+    // почему не пушится...
 }
